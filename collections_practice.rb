@@ -21,13 +21,13 @@ end
 
 def kesha_maker(array)
   new = []
-  array.map do |c|
-    #d = c.split("")
-    c[2] = "$"
-    #new << d.join
+  array.each do |c|
+    d = c.split("")
+    d[2] = "$"
+    new << d.join
   end
 
-  #new
+  new
 end
 
 def find_a(array)
